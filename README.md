@@ -38,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ```
 npx prisma init --url mysql://root:password@localhost:3306/app
 ```
+
+## GraphQL
+
+https://tech-broccoli.life/articles/engineer/nextjs-app-router-with-apollo-server

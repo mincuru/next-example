@@ -1,9 +1,22 @@
 import Link from "next/link";
+import HelloWorld from "../HelloWorld";
+
+type Props = {
+  data: {
+    hoge: String;
+  };
+};
+
+type Repo = {
+  name: String;
+  stargazers_count: number;
+};
 
 export default function Page() {
   return (
     <div>
       <h1>Hello, Next.js!</h1>
+      <HelloWorld />
       <ul>
         <li>
           <Link href="/cars/1">cars/1</Link>
@@ -18,3 +31,18 @@ export default function Page() {
     </div>
   );
 }
+
+// export const getStaticProps: GetStaticProps<{ repo: Repo }> = async () => {
+//   const data = { hoge: "fuga" };
+//   return {
+//     props: data,
+//   };
+// };
+
+// export const getStaticProps: GetStaticProps<{
+//   repo: Repo;
+// }> = async () => {
+//   const res = await fetch("https://api.github.com/repos/vercel/next.js");
+//   const repo = await res.json();
+//   return { props: { repo } };
+// };

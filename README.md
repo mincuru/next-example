@@ -33,7 +33,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## DB構築
+## DB 構築
 
 ```
 npx prisma init --url mysql://root:password@localhost:3306/app
@@ -42,3 +42,4 @@ npx prisma init --url mysql://root:password@localhost:3306/app
 ## GraphQL
 
 https://tech-broccoli.life/articles/engineer/nextjs-app-router-with-apollo-server
+https://zenn.dev/yuta4j1/articles/nextjs-apollo-starter

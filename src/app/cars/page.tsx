@@ -1,5 +1,7 @@
 import Link from "next/link";
 import HelloWorld from "../HelloWorld";
+import WithApollo from "../components/WithApollo";
+import User from "../components/User";
 
 type Props = {
   data: {
@@ -16,7 +18,9 @@ export default function Page() {
   return (
     <div>
       <h1>Hello, Next.js!</h1>
-      <HelloWorld />
+      <WithApollo>
+        <User />
+      </WithApollo>
       <ul>
         <li>
           <Link href="/cars/1">cars/1</Link>
